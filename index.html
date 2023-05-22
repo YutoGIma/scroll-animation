@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="function.js"></script>
+    <style>
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 200px;
+        }
+        .box p{
+            font-size: 48px;
+            color: red;
+            border: rgb(105, 93, 93) 5px solid;
+            padding: 20px;
+        }
+        /* 要素の初期スタイル */
+        .fade-in-box {
+            opacity: 0; /* 透明に設定 */
+            transform: translateY(30px); /* 下方向に20px移動 */
+            transition: opacity 0.5s, transform 0.5s; /* アニメーションのトランジション設定 */
+        }
+        .fade-in{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>要素</p>
+    </div>
+    <div class="box fade-in-box">
+        <p>要素</p>
+    </div>
+    <div class="box">
+        <p>要素</p>
+    </div>
+</body>
+</html>
